@@ -1,0 +1,306 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E VARIÁVEIS (Estética Orgânico Futurista)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --verde-vivo: #2ecc71;       /* Verde bio-tecnológico */
+    --verde-escuro: #1b4d3e;     /* Base orgânica profunda */
+    --futuro-claro: #f4f7f6;     /* Fundo limpo e tecnológico */
+    --branco-puro: #ffffff;
+    --texto-escuro: #2c3e50;     /* Contraste suave para leitura */
+    --efeito-vidro: rgba(255, 255, 255, 0.85);
+    --sombra-suave: 0 10px 30px rgba(27, 77, 62, 0.08);
+    --borda-arredondada: 16px;   /* Linhas curvas e orgânicas */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--futuro-claro);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light { background-color: var(--branco-puro); }
+.bg-dark { background-color: var(--verde-escuro); }
+.text-light { color: var(--branco-puro); }
+
+/* ==========================================================================
+   2. CABEÇALHO (NAVBAR) - Efeito Flutuante / Vidro
+   ========================================================================== */
+header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    background: var(--efeito-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px; /* Bordas bem curvas */
+    box-shadow: var(--sombra-suave);
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--verde-escuro);
+    font-weight: 700;
+}
+
+.logo h1 span {
+    color: var(--verde-vivo);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--verde-escuro);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--verde-vivo);
+}
+
+/* ==========================================================================
+   3. HERO SECTION (BANNER PRINCIPAL)
+   ========================================================================== */
+.hero {
+    height: 100vh;
+    /* Degradê futurista simulando tecnologia e natureza */
+    background: linear-gradient(135deg, rgba(27,77,62,0.9) 0%, rgba(46,204,113,0.4) 100%), 
+                url('https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=1920') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: var(--branco-puro);
+    margin-bottom: 20px;
+    font-weight: 700;
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botão Estilo Bio-Tech */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--verde-vivo);
+    color: var(--branco-puro);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(46, 204, 113, 0.5);
+    background-color: #27ae60;
+}
+
+/* ==========================================================================
+   4. SEÇÃO INOVAÇÕES (CARDS FUTURISTAS)
+   ========================================================================== */
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--branco-puro);
+    padding: 35px 25px;
+    border-radius: var(--borda-arredondada);
+    box-shadow: var(--sombra-suave);
+    border: 1px solid rgba(46, 204, 113, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--verde-vivo);
+    box-shadow: 0 20px 40px rgba(46, 204, 113, 0.12);
+}
+
+.card h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   5. BENEFÍCIOS E SUSTENTABILIDADE
+   ========================================================================== */
+.beneficios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beneficio-item {
+    background: var(--futuro-claro);
+    padding: 20px 30px;
+    border-left: 5px solid var(--verde-vivo);
+    border-radius: 0 var(--borda-arredondada) var(--borda-arredondada) 0;
+}
+
+.beneficio-item h4 {
+    color: var(--verde-escuro);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+blockquote.destaque {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--verde-vivo);
+    text-align: center;
+    margin: 30px auto;
+    max-width: 700px;
+    border-left: none;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   6. FORMULÁRIO DE CONTATO (Interface Limpa)
+   ========================================================================== */
+#contato h2 { color: var(--branco-puro); }
+
+#form-contato {
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: var(--borda-arredondada);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--texto-escuro);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--verde-vivo);
+    background: var(--branco-puro);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--verde-vivo);
+    color: var(--branco-puro);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #27ae60;
+}
+
+/* ==========================================================================
+   7. RODAPÉ e RESPONSIVIDADE
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #113328;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 20px;
+    }
+    nav ul { gap: 15px; }
+    .hero-content h2 { font-size: 2rem; }
+    .section-padding { padding: 50px 0; }
+}
