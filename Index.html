@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia no Agro - O Futuro no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Agro<span>Tech</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#inovacoes">Inovações</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>A Revolução Digital no Agronegócio</h2>
+            <p>Como a tecnologia está transformando o campo, aumentando a produtividade e garantindo o futuro do planeta.</p>
+            <a href="#inovacoes" class="btn">Conheça as Tecnologias</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="inovacoes" class="section-padding">
+            <div class="container">
+                <h2>Tecnologias que Estão Mudando o Campo</h2>
+                <p class="subtitle">O campo nunca esteve tão conectado. Conheça as principais ferramentas utilizadas hoje:</p>
+                
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3>Drones e Imagens de Satélite</h3>
+                        <p>Utilizados para o mapeamento de lavouras, identificação de pragas, monitoramento da saúde das plantas e até mesmo para a aplicação precisa de defensivos agrícolas, economizando recursos.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Sensores IoT (Internet das Coisas)</h3>
+                        <p>Sensores instalados no solo e nas plantas coletam dados em tempo real sobre a umidade, temperatura e nutrientes. Isso permite uma irrigação inteligente e manejo exato da terra.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Tratores e Maquinários Autônomos</h3>
+                        <p>Tratores e colheitadeiras guiados por GPS de alta precisão e Inteligência Artificial conseguem trabalhar dia e noite, otimizando o plantio e a colheita sem desperdício de combustível.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Big Data e Previsão Climática</h3>
+                        <p>Softwares cruzam dados históricos e previsões do tempo para ajudar o produtor a decidir o melhor dia para plantar, colher e aplicar insumos, reduzindo os riscos de perdas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="bg-light section-padding">
+            <div class="container">
+                <h2>Principais Benefícios da Tecnologia</h2>
+                <div class="beneficios-lista">
+                    <div class="beneficio-item">
+                        <h4>Aumento de Produtividade</h4>
+                        <p>Produzir mais alimentos utilizando a mesma quantidade de terra, essencial para alimentar a população mundial crescente.</p>
+                    </div>
+                    <div class="beneficio-item">
+                        <h4>Redução de Custo</h4>
+                        <p>Com a aplicação precisa de água, fertilizantes e defensivos, o desperdício cai drasticamente, gerando economia para o agricultor.</p>
+                    </div>
+                    <div class="beneficio-item">
+                        <h4>Rastreabilidade</h4>
+                        <p>Consumidores podem saber exatamente de onde veio o alimento, como ele foi produzido e transportado, aumentando a transparência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sustentabilidade" class="section-padding">
+            <div class="container">
+                <h2>Sustentabilidade: Tecnologia a Serviço do Meio Ambiente</h2>
+                <blockquote class="destaque">
+                    "A tecnologia não serve apenas para produzir mais, mas para produzir melhor, agredindo menos o nosso planeta."
+                </blockquote>
+                <p>Ao contrário do que muitos pensam, a tecnologia é a maior aliada da sustentabilidade no campo. Com a <strong>Agricultura de Precisão</strong>, evita-se a contaminação do solo e dos recursos hídricos. Além disso, sistemas inteligentes ajudam a poupar água na irrigação e a monitorar áreas de preservação ambiental no Paraná e em todo o Brasil.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="bg-dark section-padding text-light">
+            <div class="container">
+                <h2>Faça Parte Dessa Revolução</h2>
+                <p>Tem dúvidas sobre como a tecnologia se aplica à sua região ou quer dar uma sugestão para o nosso projeto do Agrinho?</p>
+                
+                <form id="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Sua Mensagem / Dúvida:</label>
+                        <textarea id="mensagem" rows="4" required placeholder="Como a tecnologia ajuda o agro na sua cidade?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+                <div id="mensagem-sucesso" style="display: none; color: #4CAF50; margin-top: 15px; font-weight: bold;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Tecnologia no Agro. Desenvolvido por Aluno do 1º Ano do Ensino Médio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
